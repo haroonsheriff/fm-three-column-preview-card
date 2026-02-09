@@ -1,0 +1,137 @@
+/*
+## Colors
+### Primary
+Gold 500: hsl(31, 77%, 52%)
+Cyan 800: hsl(184, 100%, 22%)
+Green 950: hsl(179, 100%, 13%)
+
+### Neutral
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Gray 100 (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+### Body Copy
+- Font size: 15px
+
+### Font
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+- Family: [Big Shoulders](https://fonts.google.com/specimen/Big+Shoulders)
+- Weights: 700
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 920px;
+  width: 90%;
+  margin: 2rem auto;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.car-box {
+  padding: 40px;
+}
+
+.car-box--sedan {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(31, 77%, 52%);
+}
+
+.car-box--suvs {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(184, 100%, 22%);
+}
+
+.car-box--luxury {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(179, 100%, 13%);
+}
+
+h2 {
+  font-size: 3.4rem;
+  font-family: "Big Shoulders", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: hsl(0, 0%, 95%);
+  margin: 26px 0;
+}
+
+.car-box__desc {
+  padding: 0 10px 0 0;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.car-box__btn {
+  display: inline-block;
+  width: 70%;
+  margin-top: 50px;
+  padding: 12px 0px;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background-color: hsl(0, 0%, 95%);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.car-box__btn:hover {
+  background-color: inherit;
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .main-container {
+    max-width: 90%;
+    width: 90%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+}
